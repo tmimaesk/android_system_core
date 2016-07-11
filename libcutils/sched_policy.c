@@ -142,7 +142,7 @@ static void __initialize(void) {
 #ifdef USE_SCHEDBOOST
         filename = "/dev/stune/foreground/tasks";
         fg_schedboost_fd = open(filename, O_WRONLY | O_CLOEXEC);
-        filename = "/dev/stune/tasks";
+        filename = "/dev/stune/background/tasks";
         bg_schedboost_fd = open(filename, O_WRONLY | O_CLOEXEC);
 #endif
     }
